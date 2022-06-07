@@ -4,4 +4,15 @@ p {
     text-align: center;
     border: solid 3px;
     border-radius: 2rem;
+    background-color: white;
+}
+
+.selected {
+    background-color: pink;
+}
+
+.containerApp {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

@@ -1,1 +1,5 @@
-<p *ngFor="let frase of frases">{{frase}}</p>
+<div [ngStyle]="{backgroundImage:'url('+scenes[selected].img+')'}" class="containerApp">
+    <app-buttons (movePos)="changeIndex($event)">
+    </app-buttons>
+    <p *ngFor="let scene of scenes; index as i" [ngClass]="{selected:selected==i}">{{scene.txt}}</p>
+</div>

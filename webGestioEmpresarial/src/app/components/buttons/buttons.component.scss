@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+td {
+    width: 50%;
+    text-align: center;
+    padding: 2rem;
+    border: solid;
+    cursor: pointer;
+    background-color: #efefef;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 120%;
+}

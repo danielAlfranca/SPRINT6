@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Scene } from 'src/app/shared/interfaces/scene';
 import { frases } from 'src/app/shared/json/frases';
 
 @Component({
@@ -8,13 +9,20 @@ import { frases } from 'src/app/shared/json/frases';
 })
 export class HomeComponent implements OnInit {
 
-  listOfFrases!:string[];
+  scenes!:Scene[];
+  init = false;
+
 
   constructor() { }
 
   ngOnInit(): void {
 
-    this.listOfFrases = frases || [];
+    this.scenes = (frases || []).map((frase,index)=>({
+
+      txt:frase,
+      img:'../../../assets/images/'+(index+1)+".jpg",
+
+    }));
   }
 
 }

@@ -1,1 +1,14 @@
-<app-escena [frases]="listOfFrases"></app-escena>
+<app-escena [scenes]="scenes" *ngIf="init else welcome">
+</app-escena>
+
+<ng-template #welcome>
+    <div class="containerMsg">
+        <h1>
+            Benvingut a la app
+        </h1>
+        <p>Faci click per iniciar la app</p>
+
+        <button (click)="init=true">Iniciar</button>
+    </div>
+
+</ng-template>
