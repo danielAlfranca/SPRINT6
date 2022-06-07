@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     this.scenes = (frases || []).map((frase,index)=>({
 
       txt:frase,
-      img:'../../../assets/images/'+(index+1)+".jpg",
+      img:'./assets/images/'+(index+1)+".jpg",
 
     }));
   }
