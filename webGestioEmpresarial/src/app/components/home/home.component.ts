@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { frases } from 'src/app/shared/json/frases';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  listOfFrases!:string[];
+
   constructor() { }
 
   ngOnInit(): void {
+
+    this.listOfFrases = frases || [];
   }
 
 }
